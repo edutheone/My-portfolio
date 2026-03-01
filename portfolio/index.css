@@ -1,0 +1,115 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #dd6464;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #00bcd4;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #1e1e2f, #2a2a40);
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:active {
+    transform: scale(0.85);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.projects {
+    padding: 60px 40px;
+    background: #f4f6f9;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin-top: 15px;
+}
+
+.tech {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.btn-small {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #1e1e2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.contact {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background: #00bcd4;
+    border: none;
+    color: white;
+}
+
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
