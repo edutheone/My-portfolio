@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f6f9;
+}
+
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 15px;
+}
+
+.sidebar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 12px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.sidebar a:hover {
+    background: #34495e;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.content p {
+    background: #dff0d8;
+    color: #3c763d;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #d6e9c6;
+}
+
+form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+}
+
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form button {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #1f6391;
+}
+
+@media (max-width: 768px) {
+    .admin-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .sidebar h2 {
+        display: none;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+}

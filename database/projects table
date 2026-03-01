@@ -1,0 +1,10 @@
+CREATE TABLE projects(
+    
+    id int auto_increment primary key,
+    title varchar(255) not null,
+    description text not null,
+    image varchar(255),
+    technologies varchar(255),
+    github_link varchar(255),
+    created_at timestamp default current_timestamp
+);
